@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>aboutme</title>
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./aboutme.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <div class="myname"><p>丘绎楦</p><div class="ima"><img src="https://ts1.cn.mm.bing.net/th/id/R-C.50ff8f6c268cdb0cd08440afaa83eed2?rik=TD9Iwl2CdfeGeg&riu=http%3a%2f%2ficon.chrafz.com%2fuploads%2fallimg%2f170119%2f1-1F119131I60-L.png&ehk=MFt1hqpQ22dLsS1ZNCyp1PMN21e%2fmLQVZiOV8oP7uRg%3d&risl=&pid=ImgRaw&r=0" alt=""></div></div>
+    </header>
+    <hr>
+    <br>
+    <br>
+      <div class="intro"><p>一个<strong>怀揣梦想</strong>、<strong>热爱挑战</strong>的年轻人。<br>渴望在这个快速发展的数字时代，成为<strong>创新的推动者</strong>，为社会进步贡献自己的一份力量。</p></div>
+      <br>
+      <hr>
+      <div class="classList">
+        <table>
+          <caption>课程列表</caption>
+          <tr>
+            <th>序号</th>
+            <th>课程名称</th>
+            <th>课程信息</th>
+            <th>操作</th>
+          </tr>
+          <tr v-for="(item, index) in list2" :key="item.id">
+            <td>{{ index + 1 }}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.about}}</td>
+            <td><button class="delClassBtn" @click="del(item.id)">删除</button></td>
+          </tr>
+        </table>
+        <button @click="fnInput" class="addClassBtn">添加课程</button>
+      </div>
+      <br>
+      <br>
+      <hr>
+      <div class="favMovie">
+        <h1>我喜欢的电影</h1>
+        <ul>
+          <li v-for="item in list" :key="item.id">
+            <h3>{{ item.name }}</h3><a :href="item.href" target="_blank"><img :src="item.src" alt=""></a>
+          </li>
+        </ul>
+      </div>
+      <br>
+      <br>
+      <br>
+      <hr>
+      <div class="moods">
+        <h1>My Moods</h1>
+        <div class="cardMod">
+          <img src="https://p1.ssl.qhmsg.com/t01811100d91f37ae35.jpg" alt="happymood">
+          <img src="https://thumbor.dahe.cn/picture/ZWdUNnpsRnczVTVpNUZsLTdJZUVoQ0V0clpZPS9odHRwcyUzQS8vbW1iaXoucXBpYy5jbi9tbWJpel9qcGcvb3ExUHltUmw5RDQ1N1dNdGlhSDdlOFNRbmVVR21BQXdRdEk0eGF1QnBKVFhIdU5UYkFpYnpJaHAzU0E5bEZiZ2RtQ2R3TGljRkxDYmdWdHhCWWZwaHlBN0EvNjQwJTNGd3hfZm10JTNEanBlZw==" alt="sadmood">
+          <div v-show="play" class="tab">
+            <h1>emo了你还</h1>
+            <p>→ → →</p>
+            <button @click="toggle">切换</button>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+    <footer>
+      <div class="left">
+        <div class="friend">友情链接</div>
+        <div class="fflex">
+          <div><a href="#"><p>孙将斌</p></a><p>他是一个打脸王，句句打脸</p></div>
+          <div><a href="#"><p>曾泇睷</p></a><p>他是一个小卷王，句句小卷</p></div>
+          <div><a href="#"><p>陈家豪</p></a><p>他是一个呆呆男，句句呆呆</p></div>
+        </div>
+      </div>
+      
+      <div class="right">
+        <img src="./hello.png" alt="erweima">
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+  <script>
+    const app = new Vue({
+            el: '#app',
+            data: {
+                classNm: '',
+                classMsg: '',
+                com: '',
+                play: true,
+                list: [
+                    {id: 1, name: 'TOP1 哆啦A梦:伴我同行', src: 'https://ts1.cn.mm.bing.net/th/id/R-C.e750157eec04e59147b9db6e0e03e210?rik=%2f51zvMhqvuba0A&riu=http%3a%2f%2fimg.sccnn.com%2fbimg%2f337%2f42548.jpg&ehk=SDOLBlnJoJ3CPK3iXYtEr08ed74lL5oz86RFOu74nx4%3d&risl=&pid=ImgRaw&r=0', href: 'https://baike.baidu.com/item/%E5%93%86%E5%95%A6A%E6%A2%A6%EF%BC%9A%E4%BC%B4%E6%88%91%E5%90%8C%E8%A1%8C/13845055?fromModule=lemma_search-box&fromtitle=%E4%BC%B4%E6%88%91%E5%90%8C%E8%A1%8C&fromid=17771061'},
+                    {id: 2, name: 'TOP2 千与千寻', src: 'https://img.phb123.com/uploads/allimg/220906/810-220Z61439220-L.png', href: 'https://baike.baidu.com/item/%E5%8D%83%E4%B8%8E%E5%8D%83%E5%AF%BB/389041'},
+                    {id: 3, name: 'TOP3 天气之子', src: 'https://ts1.cn.mm.bing.net/th/id/R-C.d94c73973b8090f33429d1c84231de78?rik=fDkcBwrHyjvXtg&riu=http%3a%2f%2fclubimg.club.vmall.com%2fdata%2fattachment%2fforum%2f201911%2f01%2f2117190afjlobor1pncsf7.jpg&ehk=uxYKG9KDq5%2fNgQCnJ69dBtkg0iV5RRLjJ2pLOe3s8iQ%3d&risl=&pid=ImgRaw&r=0', href: 'https://baike.baidu.com/item/%E5%A4%A9%E6%B0%94%E4%B9%8B%E5%AD%90/23203347'}
+                ],
+                list2: [
+                  {id: 4, name: 'Web开发基础', about: '星期二/五，第一节~第五节'},
+                  {id: 5, name: '程序设计方法与实践', about: '星期一/四，第一节~第五节'},
+                  {id: 6, name: '概率与数理统计', about: '星期一/三，第三节~第四节'},
+                  {id: 7, name: '数值分析', about: '星期一/三，第八节~第九节'},
+                  {id: 8, name: '数据结构与算法', about: '星期四/五，第六节~第七节'},
+                  {id: 5, name: '离散数学', about: '星期二/五，第六节~第七节'}
+                ]
+            },
+            methods: {
+              fnInput(){
+                classNm = prompt('请输入课程名称')
+                while(classNm.trim() === '')
+                {
+                    alert('请输入课程名称')
+                    classNm = prompt('请输入课程名称')
+                }
+                classMsg = prompt('请输入课程信息')
+                while(classMsg.trim() === '')
+                {
+                    alert('请输入课程信息')
+                    classMsg = prompt('请输入课程信息')
+                }
+                this.list2.unshift({
+                    //把时间戳当id用
+                    id: +new Date(),
+                    name: classNm,
+                    about: classMsg
+                })
+              },
+              del(id){
+                  com = prompt('输入【delete】确认删除')
+                  if(com === "delete")
+                    this.list2 = this.list2.filter(item => item.id !== id)
+              },
+              toggle(){
+                let tab = document.querySelector('.tab')
+                let h1 = document.querySelector('.tab h1')
+                let p = document.querySelector('.tab p')
+                let div = document.querySelector('.cardMod div')
+                h1.innerHTML = h1.innerHTML === "HAPPY happy HAPPY" ? "emo了你还" : "HAPPY happy HAPPY"
+                p.innerHTML = p.innerHTML === "→ → →" ? "← ← ←" : "→ → →"
+                if(p.innerHTML === "← ← ←"){
+                  tab.style.transform='translateX(100%)'
+                }
+                else
+                  tab.style.transform='translateX(0)'
+              }
+            }
+        })
+  </script>
+</body>
+</html>

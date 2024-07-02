@@ -1,0 +1,248 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #99f2c8;
+}
+header {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  background-color: rgb(29, 58, 172);
+}
+.myname{
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translate(-50%);
+  background: white;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border: 3px solid black;
+  padding: 7px 65px 7px 45px;
+}
+.myname p{
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.ima{
+  position: absolute;
+  left: 130px;
+  bottom: 1px;
+}
+.myname img {
+  height: 25px;
+  width: 25px;
+}
+.intro {
+  position: relative;
+  text-align: center;
+  font-size: large;
+}
+.intro strong {
+  color: blue;
+}
+.classList {
+  position: relative;
+  top: 20px;
+  /* background-color: greenyellow; */
+}
+.classList td, th{
+  padding: 5px 20px;
+  border-bottom: 1px solid #000000;
+  border-right: 2px solid #000000;
+}
+.classList table {
+  margin: 0 auto;
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+.classList th{
+  background-color: skyblue;
+  border-bottom: 2px solid black;
+}
+.classList tr{
+  background-color: #fff;
+}
+.addClassBtn {
+  position: relative;
+  top: 5px;
+  left: 50%;
+  transform: translate(-50%);
+  box-shadow:inset 2px 11px 7px 1px #29bbff;
+  background-color:#2dabf9;
+  border-radius:25px;
+  border:1px solid #0b0e07;
+  display:inline-block;
+  cursor:pointer;
+  color:#004234;
+  font-size:15px;
+  padding:10px 16px;
+  text-shadow:0px 0px 5px #263666;
+}
+.addClassBtn:hover {
+  background-color:#0688fa;
+}
+.addClassBtn:active {
+  position:relative;
+  top:1px;
+}
+.delClassBtn {
+  box-shadow:inset 0px 1px 0px 0px #f5978e;
+  background:linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+  background-color:#f24537;
+  border-radius:6px;
+  border:1px solid #d02718;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:14px;
+  font-weight:bold;
+  padding:6px 13px;
+  text-shadow:0px 1px 0px #810e05;
+}
+.delClassBtn:hover {
+  background:linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
+  background-color:#c62d1f;
+}
+.delClassBtn:active {
+  position:relative;
+  top:1px;
+}
+.classList caption {
+  font-size: 30px;
+  font-weight: bolder;
+  -webkit-text-stroke: 1px #b0c812;
+  -webkit-text-fill-color: #000000;
+}
+.favMovie {
+  position: relative;
+  top: 30px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+.favMovie h1 {
+  margin-bottom: 20px;
+}
+.favMovie ul{
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap; /*换行*/
+  list-style-type: none;
+}
+.favMovie li{
+  flex: 3;
+}
+.favMovie li img {
+  margin-top: 8px;
+  width: 300px;
+  height: 450px;
+  /* background-repeat: no-repeat; */
+  transition: 1 ease-in-out;
+}
+.favMovie li img:hover{
+  transform: translateY(-5px);
+}
+.favMovie li img:active{
+  transform: translateY(2px);
+}
+.moods{
+  position: relative;
+  margin: 0 auto;
+}
+.moods h1{
+  text-align: center;
+}
+.cardMod{
+  position: relative;
+  top: 50px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  width: 1000px;
+  height: 300px;
+}
+.cardMod img{
+  width: 50%;
+  height: 100%;
+}
+.cardMod .tab{
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  background-image: linear-gradient(to top,#bdc3c7, #2c3e50);
+  /* background-image: linear-gradient(to right,#2980b9, #6dd5fa); */
+  left: 0;
+  transition: 0.5s ease-in-out;
+  text-align: center;
+  font-size: large;
+  line-height: 30px;
+}
+.tab h1{
+  color: #2dabf9;
+  margin-top: 100px;
+}
+.tab button{
+  width: 70%;
+  margin-top: 35px;
+  background-color: #f6f6f6;
+  outline: none;
+  border-radius: 8px;
+  padding: 13px;
+  color: #a262ad;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.tab button:hover{
+  background-color: #2c3e50;
+  color:#f6f6f6;
+  transition: background-color 0.1s ease;
+}
+footer{
+  position: relative;
+  display: flex;
+  background-color: rgb(34, 28, 28);
+  color: rgb(172, 172, 172);
+  top: 50px;
+  width: 100%;
+  height: 150px;
+}
+.left{
+  flex: 2;
+}
+.friend{
+  text-align: center;
+}
+.fflex{
+  display: flex;
+  justify-content: center;
+}
+.fflex div{
+  width: 100px;
+  height: 100%;
+  margin: 0 50px;
+}
+.fflex p{
+  margin-top: 10px;
+}
+.fflex a{
+  text-decoration: none;
+}
+.fflex a:hover{
+  text-decoration: underline;
+}
+.right{
+  flex: 1;
+}
+.right img{
+  margin-top: 25px;
+  width: 100px;
+  height: 100px;
+}
