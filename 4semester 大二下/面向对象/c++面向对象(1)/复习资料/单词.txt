@@ -1,0 +1,25 @@
+object		对象
+abstraction	抽象
+implementation	实现
+initialzation	初始化
+cleanup		清除
+overloading	重载
+constants		常量
+inline		内联
+references	引用
+constructor	构造
+dynamic		动态
+encapsulation	封装
+inheritance	继承
+composition	组合
+virtual		虚拟
+polymorphism	多态性
+template		模板
+variables		变量
+derivation		派生
+deconstructor	析构
+subclass 		子类
+multiple 		多重
+Abstract 		抽象
+assignment 	赋值
+array element	数组元素

@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue May 25 11:29:17 2021
+# Process ID: 1540
+# Current directory: C:/Users/LX/Desktop/mathlogical experiment3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19904 C:\Users\LX\Desktop\mathlogical experiment3\mathlogical experiment3.xpr
+# Log file: C:/Users/LX/Desktop/mathlogical experiment3/vivado.log
+# Journal file: C:/Users/LX/Desktop/mathlogical experiment3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/LX/Desktop/mathlogical experiment3/mathlogical experiment3.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config {C:/Users/LX/Desktop/mathlogical experiment3/sim/testbench_behav.wcfg}
+source testbench.tcl
+close_sim

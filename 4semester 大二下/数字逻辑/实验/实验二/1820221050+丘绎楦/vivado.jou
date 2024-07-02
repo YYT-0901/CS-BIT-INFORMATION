@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Jun  1 19:19:46 2021
+# Process ID: 15348
+# Current directory: D:/张驰/学习/数字逻辑/实验二/1120191600+张驰/1120191600+张驰
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16012 D:\张驰\学习\数字逻辑\实验二\1120191600+张驰\1120191600+张驰\mathlogical experiment1.xpr
+# Log file: D:/张驰/学习/数字逻辑/实验二/1120191600+张驰/1120191600+张驰/vivado.log
+# Journal file: D:/张驰/学习/数字逻辑/实验二/1120191600+张驰/1120191600+张驰\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/张驰/学习/数字逻辑/实验二/1120191600+张驰/1120191600+张驰/mathlogical experiment1.xpr}
+update_compile_order -fileset sources_1

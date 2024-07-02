@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue May 11 14:30:39 2021
+# Process ID: 20856
+# Current directory: C:/Users/LX/Desktop/mathlogical experiment3/mathlogical experiment3.runs/synth_1
+# Command line: vivado.exe -log ex3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ex3.tcl
+# Log file: C:/Users/LX/Desktop/mathlogical experiment3/mathlogical experiment3.runs/synth_1/ex3.vds
+# Journal file: C:/Users/LX/Desktop/mathlogical experiment3/mathlogical experiment3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ex3.tcl -notrace
