@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/../../PROJECT/easybbs/完整效果/easybbs/easybbs.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../../PROJECT/easyblog/easyblog.sql" dialect="MySQL" />
+  </component>
+</project>
